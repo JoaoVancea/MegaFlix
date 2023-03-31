@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Montserrat+Alternates&display=swap');
+* {
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+header {
+    background-image: url(../assets/filmes.png);
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    grid-row-start: 1;
+    grid-column: 1/13;
+}
+.logo__div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100px;
+}
+.logo {
+    width: 92px;
+    height: 72px;
+}
+h6 {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 18px;
+    color: #fff;
+}
+li {
+    display: inline-block;
+    margin-right: 8px;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 500;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+.home {
+    color: #fd0178;
+    display: inline-flex;
+    flex-direction: column;
+}
+hr {
+    margin-top: 4px;
+    border: 2px solid #fd0178;
+    display: inline;
+}
+h1 {
+    grid-row-start: 3;
+    color: #fff;
+    grid-column: 2/6;
+    font-size: 36px;
+    font-family: 600;
+}
+h2 {
+    grid-row-start: 4;
+    grid-column: 2/8;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 200;
+    margin-top: 20px
+}
+.btn {
+    grid-row-start: 5;
+    grid-column-start: 2;
+    display: flex;
+}
+.btn__start {
+    background-color: #fd0178;
+    width: 200px;
+    height: 50px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+.btn__plan {
+    background-color: #252c57;
+    width: 200px;
+    height: 50px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .menu__links {
+        display: none;
+    }
+    h1, h2 {
+        margin-left: 10px;
+    }
+    .btn {
+        width: 90vw;
+    }
+}
