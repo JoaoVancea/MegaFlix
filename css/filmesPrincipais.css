@@ -1,0 +1,112 @@
+ .filmesPrincipais {
+    width: auto;
+    padding: 50px;
+    background: rgb(179,59,244);
+    background: linear-gradient(90deg, rgba(179,59,244,1) 35%, rgba(96,22,167,1) 100%);
+    display: grid;
+    grid-template-rows: 6fr;
+    grid-template-columns: repeat(12 1fr);
+    gap: 48px;
+    padding-left: 100px;
+}
+.filmesPrincipais__title {
+    grid-row-start: 1;
+    grid-column: 1/12;
+    text-align: center;
+    margin-top: 24px;
+    font-size: 2rem;
+    margin-left: -30px;
+}
+img, .atropos {
+    width: 400px;
+    height: auto;
+    border-radius: 12px;
+}
+.my-atropos {
+    grid-row-start: 3;
+    grid-column: 2/5;
+}
+.my-atropos2 {
+    grid-row-start: 3;
+    grid-column: 5/8;
+}
+.my-atropos3 {
+    grid-row-start: 3;
+    grid-column: 8/11;
+}
+.my-atropos4 {
+    grid-row-start: 4;
+    grid-column: 2/5;
+}
+.my-atropos5 {
+    grid-row-start: 4;
+    grid-column: 5/8;
+}
+.my-atropos6 {
+    grid-row-start: 4;
+    grid-column: 8/11;
+}
+@media (max-width: 1550px){
+    .filmesPrincipais{
+        width: auto;
+        grid-template-rows: 1fr 1fr auto auto 1fr;
+        grid-template-columns: 1fr auto auto auto auto 1fr;
+        height: auto;
+        padding-left: 100px;
+    }
+    .filmesPrincipais__title {
+        grid-row-start: 1;
+        grid-column: 1/12;
+        text-align: center;
+        margin-top: 24px;
+        font-size: 2rem;
+        margin-left: -180px;
+    }
+    .my-atropos {
+        grid-row-start: 2;
+        grid-column: 2/4;
+    }
+    .my-atropos2 {
+        grid-row-start: 2;
+        grid-column: 4/6;
+    }
+    .my-atropos3 {
+        grid-row-start: 3;
+        grid-column: 2/4;
+    }
+    .my-atropos4 {
+        grid-row-start: 3;
+        grid-column: 4/6;
+    }
+    .my-atropos5 {
+        grid-row-start: 4;
+        grid-column: 2/4;
+    }
+    .my-atropos6 {
+        grid-row-start: 4;
+        grid-column: 4/6;
+    }
+}
+@media (max-width: 1040px){
+    .filmesPrincipais{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        align-items: center;
+        padding: 0px;
+    }
+    .filmesPrincipais__title {
+        margin-left: 0px;
+    }
+}
+@media (max-width: 500px){
+    img, .atropos {
+        width: 98%;
+        height: auto;
+        border-radius: 12px;
+    }
+    .filmesPrincipais__title {
+        margin-left: 0px;
+    }
+}

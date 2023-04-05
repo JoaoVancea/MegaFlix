@@ -7,6 +7,7 @@
 .caracteristicasTitulo {
     color: wheat;
     grid-column: 1/13;
+    margin-top: 50px;
     text-align: center;
 }
 .caracteristicas__bloco1, .caracteristicas__bloco2, .caracteristicas__bloco3, .caracteristicas__bloco4 {
@@ -44,5 +45,8 @@ p {
     .caracteristicas {
        display: flex;
        flex-direction: column; 
+    }
+    .caracteristicasTitulo {
+        margin-top: 20px;
     }
 }
